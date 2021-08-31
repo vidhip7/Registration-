@@ -1,0 +1,195 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Flamenco', serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.login-box{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.row{
+    text-align: center;
+    margin-top: -100px;
+}
+
+.user-box{
+    position: relative;
+}
+
+.user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+}
+
+.user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #0e153a;
+    font-size: 12px;
+}
+
+span{
+    position: relative;
+    display: inline-flex;
+    width: 120px;
+    height: 45px;
+}
+
+span a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+}
+
+span a::before,
+span a::after{
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+span a::before{
+    position: absolute;
+    content: "BUTTON";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+span a::after{
+    position: absolute;
+    content: "SUBMIT";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.centerdiv{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+   }
+   
+
+#profilepic{
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+ position: inherit;
+ top: -60px;
+ left: calc( (350px - 120px) / 2 )
+}
+
+body{
+    background-image: url('images/intro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    
+}
+h2{
+ text-align: center;
+ color: white;
+ text-transform: uppercase;
+ font-size: 2em;
+ word-spacing: 10px;
+ margin-bottom: 50px;
+ text-shadow: -2px 2px 1px #0A84C6;
+}
+
+.inputbox{
+ width: calc(100% - 40px);
+ height: 30px;
+ display: block;
+ margin: auto;
+ padding: 0 10px;
+ box-sizing: border-box;
+}
+
+::placeholder{
+ letter-spacing: 2px;
+ color: black;
+}
+
+button{
+ width: calc(100% - 40px);
+ height: 30px;
+ display: block;
+ margin: auto;
+ color: white;
+ background-color: #0A84C6;
+ border: none;
+}
+
+.FORGOT-SECTION{
+ width: calc(100% - 40px);
+ line-height: 30px;
+ display: block;
+ margin: auto;
+ color: white;
+ background-color: dodgerblue;
+ text-transform: uppercase;
+ font-size: 0.8em;
+ text-align: right;
+ padding-right: 20px;
+ box-sizing: border-box;
+
+}

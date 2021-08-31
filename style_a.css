@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url('images/intro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+.center-div {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-10%, -10%);
+}
+
+.heading {
+    width: 100%;
+    line-height: 80px;
+    font-size: 50px;
+    font: black;
+    font-weight: bold;
+}
+form{
+    width: 400px;
+}
+

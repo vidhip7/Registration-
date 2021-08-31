@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style_h.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: "Flamenco", cursive;
+}
+</style>
+
+</head>
+<body>
+
+<header class="site-headers" >
+    <nav>
+        <div class="raw">
+            <img src="images/img.png" class="logo" alt="">
+        </div>
+        <div class="menu">
+           <ul  id="check-class" >
+               <li>Home</li>
+               <li>services</li>
+               <li>Aboutus</li>
+               <li>contactus</li>
+            </ul>
+            <a href="#" class="mobile-icon" onclick="slideshow()"> <em class="fa fa-bars"></em> </a>
+        </div>
+    </nav>
+
+    <div class="main-content-header">
+       <h1><span class="colorchange">STUDENT INFORMATION PORTAL</span></h1>
+       <a href="adminlogin.php" class="btn btn-full">
+       <button></button>admin</a>
+       <a href="studentlogin.php" class="btn btn-nav">
+       <button></button>student
+       </a>
+    </div>
+
+</header>
+
+<script type="text/javascript">
+
+     function slideshow(){
+        var x = document.getElementId('check-class');
+        if(x.style.display === "none"){
+            x.style.display="block";
+        }else{
+            x.style.display="none";
+        }
+     }
+</script>
+
+</body>
+</html>
